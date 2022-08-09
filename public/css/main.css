@@ -1,0 +1,580 @@
+html {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    background-color: #010a0f;
+}
+
+body {
+    padding-top: 20px;
+    background: transparent;
+    font-size: .9rem;
+}
+
+.stat-label {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: .85rem;
+    width: 100%;
+    margin-top: -12px;
+}
+
+.stat-label li {
+    display: inline-block;
+    list-style-type: square;
+    color: #a6a6a6;
+    width: 30%;
+}
+
+.stat-label li::before {
+    content: "";
+    margin-right: 7px;
+    background: #000;
+    padding: 0 6px;
+    line-height: 1;
+    border-radius: 2px;
+    display: inline-block;
+    height: 8px;
+}
+
+.stat-label li.profit::before {
+    background-color: #f4c63d;
+}
+
+.stat-label li.expenses::before {
+    background-color: #f05b4f;
+}
+
+.stat-label li.rent::before {
+    background-color: #d70206;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    max-width: 960px;
+}
+
+.irs--round .irs-line,
+.irs--round .irs-bar {
+    top: 13px;
+}
+
+.irs--round {
+    height: 30px;
+    width: 90px;
+    margin: auto;
+}
+
+.irs--round .irs-handle {
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+p.knob-label {
+    display: block;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #febc2c;
+}
+
+.ct-bar {
+    stroke-width: 12px !important;
+}
+
+.ct-grid {
+    stroke: rgba(244, 244, 244, 0.23);
+}
+
+.ct-labels span {
+    color: #d0d0d0;
+}
+
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+    background-color: #47535e;
+}
+
+.irs--round .irs-handle {
+    background-color: #213344;
+}
+
+.irs--round .irs-line {
+    background-color: transparent;
+}
+
+.irs--round .irs-handle {
+    border: 4px solid #ffff90;
+}
+
+.irs--round .irs-line {
+    border: 1px solid #ffff90;
+}
+
+.irs--round .irs-bar {
+    background-color: #ffff90;
+}
+
+.bnb-knob {
+    border: 1px solid gray;
+    border-width: 1px 1px 0 0;
+}
+
+.bnb-knob input {
+    font-size: 16px !important;
+}
+
+.expenses-panel input {
+    text-align: right;
+    border: 1px solid #febc2c;
+    background: transparent !important;
+    color: #febc2c !important;
+}
+
+/*.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #2e476f;
+}
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+    stroke: #847d7d;
+}
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+    stroke: #ddd2af;
+}*/
+
+.cashflow-display .col-sm-4 .card {
+    background: transparent;
+}
+
+.cashflow-display .col-sm-4 {
+    padding: 0;
+}
+
+.cashflow-display .col-sm-4 img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.cashflow-display .col-sm-4 p {
+    text-align: center;
+}
+
+.cf-amount {
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 5px solid #51a6d9;
+    display: inline-block;
+    padding-bottom: .8rem;
+    min-width: 80%;
+    padding-top: 1rem;
+    border-top: 0;
+    margin-top: -15px;
+}
+
+.cf-period {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #a6a6a6;
+    display: block;
+}
+
+.cf-amount::before {
+    content: "$ ";
+    color: #ffff90;
+}
+
+.bnb-knob>div::after {
+    content: "$";
+    position: absolute;
+    bottom: 40px;
+    font-weight: bold;
+    left: 48%;
+    font-size: 1.1rem;
+    color: #ffff90;
+}
+
+.occupancy-knob>div::after {
+    content: '%';
+}
+
+.listings-knob>div::after {
+    content: '#';
+}
+
+.expenses-input {
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    .expenses-input {
+        font-size: 1rem;
+    }
+}
+
+/* Dhiraj CSS */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #181818;
+    font-weight: 400;
+    padding: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.strong {
+    font-weight: 700;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1060px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.listings,
+.cumm-monthly-income,
+.expenses-block,
+.cashflow-display,
+.cashflow-display-sm {
+    background: #272727;
+    /*background: rgba(0, 0, 0,.1);*/
+    padding: 20px;
+}
+
+.cumm-monthly-income,
+.cashflow-display {
+    padding: 30px 20px;
+}
+
+.bnb-knob {
+    border: 0;
+    border-left: 1px solid #808080;
+}
+
+.listings-knob {
+    border-left: 0;
+}
+
+.input-group-text {
+    background: #febc2c;
+    color: #333;
+}
+
+hr {
+    border-top-color: #808080;
+}
+
+.bnb-knob>div::after {
+    bottom: 70px;
+}
+
+.irs--round {
+    margin-top: -20px;
+}
+
+.listings .form-control {
+    height: 30px;
+    width: 90px;
+    margin: 5px auto 0;
+    background: transparent;
+    border: 1px solid #febc2c;
+    color: #febc2c;
+    text-align: center;
+}
+
+.icon-home {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    width: 140px;
+    height: 75px;
+    border: 5px solid #50A8DA;
+    border-top: 0;
+    margin: 10px auto;
+}
+
+.icon-home:before,
+.icon-home:after {
+    top: -15px;
+    content: '';
+    width: 94px;
+    height: 6px;
+    background: #50A8DA;
+    position: absolute;
+    transform: rotate(-20deg);
+    /*   transform-origin: 0 center; */
+    left: -25px;
+}
+
+.icon-home:after {
+    left: auto;
+    right: -25px;
+    transform: rotate(20deg);
+}
+
+.icon-home span:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 25px;
+    background: #50A8DA;
+    left: 110px;
+    top: -20px;
+}
+
+.icon-home b {
+    font-weight: 700;
+    font-size: 16px;
+    color: #febc2c;
+}
+
+.icon-home b:before,
+.cashflow-display-sm table tr td:last-child span:before {
+    content: '$ ';
+    color: #febc2c;
+}
+
+.cashflow-display-sm .col-12 {
+    padding: 0;
+}
+
+.cashflow-display-sm table tr td {
+    white-space: nowrap;
+}
+
+.stat-label {
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.stat-label li {
+    color: #fff;
+}
+
+.table tr td {
+    border-color: #808080;
+}
+
+.table tr:first-child td {
+    border-top: 0;
+}
+
+.knob {
+    position: static !important;
+    margin-top: -90px !important;
+    margin-left: 0px !important;
+}
+
+.irs--round .irs-line,
+.irs--round .irs-handle,
+.irs--round .irs-bar {
+    border: 1px solid #50A8DA;
+}
+
+.irs--round .irs-handle,
+.irs--round .irs-bar,
+.irs--round .irs-handle:hover,
+.irs--round .irs-handle.state_hover {
+    background-color: #50A8DA;
+}
+
+.bnb-knob>div::after {
+    color: #febc2c;
+}
+
+/* Rent - Red */
+
+.ct-series-a .ct-bar {
+    stroke: #fd413c;
+}
+
+/* Expenses - Green */
+
+.ct-series-b .ct-bar {
+    stroke: #6ab04c;
+}
+
+/*Profit* - Yellow */
+
+.ct-series-c .ct-bar {
+    stroke: #febc2c;
+}
+
+.stat-label li.rent::before {
+    background-color: #fd413c;
+}
+
+.stat-label li.expenses::before {
+    background-color: #6ab04c;
+}
+
+.stat-label li.profit::before {
+    background-color: #febc2c;
+}
+
+.bnb-knob input {
+    color: #febc2c !important;
+}
+
+.weekday-knob {
+    border-left: 0;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+    h5 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .logo {
+        margin: 10px;
+        order: -1;
+    }
+    .logo img {
+        max-height: 70px;
+        object-fit: cover;
+        width: auto;
+    }
+    .listings-first {
+        padding-bottom: 0;
+    }
+    .listings-second {
+        padding-top: 0;
+    }
+    .weekday-knob {
+        border-left: 0;
+    }
+    .listings-knob,
+    .occupancy-knob {
+        border-bottom: 1px solid #808080;
+        padding-bottom: 15px !important;
+    }
+    .weekday-knob,
+    .weekend-knob {
+        padding-top: 15px !important;
+    }
+    .expenses-panel {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+    .cashflow-display {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    .knob {
+        margin-left: 12px !important;
+    }
+}
+
+/* Utilities */
+
+.text-yellow {
+    color: #febc2c;
+}
+
+.text-green {
+    color: #6ab04c;
+}
+
+.input-group-prepend .input-group-text {
+    background: transparent;
+    color: #febc2c;
+}
+
+#frontdesk-check {
+    display: none;
+}
+
+label[for='frontdesk-check']::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #febc2c;
+    color: #febc2c;
+}
+
+label[for='frontdesk-check']::after {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 10px;
+    border-left: 1px solid #febc2c;
+    border-bottom: 1px solid #febc2c;
+    transform: rotate(-45deg);
+    color: #c1c1c1;
+}
+
+label[for='frontdesk-check'] {
+    display: inline;
+    position: relative;
+}
+
+label[for='frontdesk-check']::before,
+label[for='frontdesk-check']::after {
+    position: absolute;
+}
+
+/*Outer-box*/
+
+label[for='frontdesk-check']::before {
+    top: 0;
+}
+
+/*Checkmark*/
+
+label[for='frontdesk-check']::after {
+    left: 3px;
+    top: 4px;
+}
+
+/*Hide the checkmark by default*/
+
+#frontdesk-check+label::after {
+    content: none;
+}
+
+/*Unhide the checkmark on the checked state*/
+
+#frontdesk-check:checked+label::after {
+    content: "";
+    color: #307700;
+}
+
+#frontdesk-check:checked+label::before {
+    color: #307700;
+}
+
+#frontdesk-check:focus+label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
