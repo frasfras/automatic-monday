@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <HelloWorld class="knob-label" msg="Bnb Visual Analyzer " />
+    <HelloWorld msg=" Visual Analyzer " />
   </div>
 </template>
 
